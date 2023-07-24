@@ -7,6 +7,7 @@
         "Birthday": "August 12th",
         "Breed": "",
         "Image": "/pet-adoption-pics/winnie-purrington.jpg",
+        "PngImage": "pet-png/winnie.png",
         "Tricks": "Nose Kiss",
         "Species": "Cat"
     },
@@ -17,6 +18,7 @@
         "Birthday": "December 17th",
         "Breed": "",
         "Image": "/pet-adoption-pics/rover-fluffington.jpg",
+        "PngImage": "pet-png/rover.png",
         "Tricks": "Fist Bump",
         "Species": "Dog"
     },
@@ -27,6 +29,7 @@
         "Birthday": "March 29th",
         "Breed": "",
         "Image": "/pet-adoption-pics/pixie-twinkletoes.jpg",
+        "PngImage": "pet-png/pixie.png",
         "Tricks": "",
         "Species": "Cat"
     },
@@ -37,6 +40,7 @@
         "Birthday": "July 10th",
         "Breed": "",
         "Image": "/pet-adoption-pics/mocha-buttercup.jpg",
+        "PngImage": "pet-png/mocha.png",
         "Tricks": "Nudge Nose",
         "Species": "Dog"
     },
@@ -47,6 +51,7 @@
         "Birthday": "September 23rd",
         "Breed": "Cat",
         "Image": "pet-adoption-pics/petunia-puddlepaws.jpg",
+        "PngImage": "pet-png/petunia.png",
         "Tricks": "",
         "Species": "Cat"
     },
@@ -57,8 +62,8 @@
         "Birthday": "June 23rd",
         "Breed": "",
         "Image": "pet-adoption-pics/max-cuddlebuns.jpg",
+        "PngImage": "/pet-png/max.png",
         "Tricks": "Can Say Please",
         "Species": "Dog"
-    },
-    
+    }    
     ]}
