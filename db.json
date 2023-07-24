@@ -4,21 +4,61 @@
         "id": 1,
         "Name": "Winnie Purrington",
         "Age": 3,
-        "Birthday": "February 13th",
-        "Breed": "Cat",
-        "Image": "https://i.ibb.co/Vj8vs7V/winnie-purrington.jpg",
+        "Birthday": "August 12th",
+        "Breed": "",
+        "Image": "/pet-adoption-pics/winnie-purrington.jpg",
         "Tricks": "Nose Kiss",
-        "Fave Treat": "salmon"
+        "Species": "Cat"
     },
     {
         "id": 2,
         "Name": "Rover Fluffington",
         "Age": 2,
-        "Birthday": "August 12th",
-        "Breed": "Dog",
-        "Image": "https://i.ibb.co/XpBZJRZ/mocha-buttercup.jpg",
+        "Birthday": "December 17th",
+        "Breed": "",
+        "Image": "/pet-adoption-pics/rover-fluffington.jpg",
         "Tricks": "Fist Bump",
-        "Fave Treat": "bacon"
-    }
+        "Species": "Dog"
+    },
+    {
+        "id": 3,
+        "Name": "Pixie Twinkletoes",
+        "Age": ,
+        "Birthday": "March 29th",
+        "Breed": "",
+        "Image": "/pet-adoption-pics/pixie-twinkletoes.jpg",
+        "Tricks": "",
+        "Species": "Cat"
+    },
+    {
+        "id": 4,
+        "Name": "Mocha Buttercup",
+        "Age": 6,
+        "Birthday": "July 10th",
+        "Breed": "",
+        "Image": "/pet-adoption-pics/mocha-buttercup.jpg",
+        "Tricks": "Nudge Nose",
+        "Species": "Dog"
+    },
+    {
+        "id": 5,
+        "Name": "Petunia Puddlepaws",
+        "Age": 3,
+        "Birthday": "September 23rd",
+        "Breed": "Cat",
+        "Image": "pet-adoption-pics/petunia-puddlepaws.jpg",
+        "Tricks": "",
+        "Species": "Cat"
+    },
+    {
+        "id": 6,
+        "Name": "Max Cuddlebuns",
+        "Age": ,
+        "Birthday": "June 23rd",
+        "Breed": "",
+        "Image": "pet-adoption-pics/max-cuddlebuns.jpg",
+        "Tricks": "Can Say Please",
+        "Species": "Dog"
+    },
     
     ]}
