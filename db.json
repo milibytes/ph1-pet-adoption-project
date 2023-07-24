@@ -1,0 +1,24 @@
+{
+    "pets": [
+    {
+        "id": 1,
+        "Name": "Winnie Purrington",
+        "Age": 3,
+        "Birthday": "February 13th",
+        "Breed": "Cat",
+        "Image": "https://i.ibb.co/Vj8vs7V/winnie-purrington.jpg",
+        "Tricks": "Nose Kiss",
+        "Fave Treat": "salmon"
+    },
+    {
+        "id": 2,
+        "Name": "Rover Fluffington",
+        "Age": 2,
+        "Birthday": "August 12th",
+        "Breed": "Dog",
+        "Image": "https://i.ibb.co/XpBZJRZ/mocha-buttercup.jpg",
+        "Tricks": "Fist Bump",
+        "Fave Treat": "bacon"
+    }
+    
+    ]}

@@ -1,9 +1,12 @@
 body {
-    background: #F8F9F0;
-    text-align: left;
-  }
-  
-h1 {
-  background-color: #FDE9FF;
-  ;
+background: #F8F9F0;
+text-align: left;
 }
+
+h1 {
+background-color: #FDE9FF;
+width: 1680px;
+;
+}
+
+
