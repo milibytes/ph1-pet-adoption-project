@@ -13,16 +13,18 @@ justify-content: space-between;
 }
 
 .topnav {
-    border: 1px solid black;
-    border-radius: 20px;
-    padding: 8px 20px;
-    display: flex;
-    gap: 10px;
+border: 1px solid black;
+border-radius: 20px;
+padding: 8px 20px;
+display: flex;
+gap: 10px;
 }
 
 #mainheader div {
-    display: flex;
+display: flex;
 }
+
+
 
 .logo-parent {
 position: relative;
@@ -62,6 +64,7 @@ width: 200px;
 height: 200px;
 padding: 20px;
 transition: transform .2s;
+border-radius: 30px;
 margin: 0 auto;
 }
 
@@ -71,21 +74,34 @@ transform: scale(1.2);
 
 .pet-card {
 background-color: #FDE9FF;
+position: relative;
 width: 260px;
 height: 400px;
 margin: 20px;
 display: block;
 flex-direction: column;
 align-items: center;
-border-radius: 10px;
+border-radius: 30px;
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 transition: box-shadow 0.3s ease-in-out;
 }
 
 .pet-info {
 background-color: white;
-width: 160px;
-height: 300px;
+position: absolute;
+top: 140px;
+left: 20px;
+width: 215px;
+height: 240px;
+margin-right: auto;
+margin-left: auto;
+border-radius: 30px;
 
+}
+
+.pet-info h3 {
+text-align: left;
+font-size: small;
+text-indent: 35px;
 
 }
