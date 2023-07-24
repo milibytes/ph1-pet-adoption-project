@@ -1,12 +1,46 @@
 body {
-background: #F8F9F0;
-text-align: left;
+background: hsl(67, 43%, 96%);
 }
 
-h1 {
+#mainheader {
+display: flex;
 background-color: #FDE9FF;
-width: 1680px;
-;
+justify-content: space-around;
+
 }
 
+.logo-parent {
+position: relative;
+top: 0;
+left: 100;
+}
+
+.logo {
+width: 0px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+position: relative;
+bottom: 50%;
+left: 0;
+
+}
+#pet-nav {
+display: flex;
+flex-wrap: wrap;
+gap: 10px 20px; /* row-gap column gap */
+}
+
+img {
+display: flex;
+width: 200px;
+height: 200px;
+padding: 20px;
+transition: transform .2s;
+margin: 0 auto;
+}
+
+img:hover {
+transform: scale(1.2); 
+}
 

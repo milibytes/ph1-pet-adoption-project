@@ -6,7 +6,6 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
     <script defer src="src/index.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>FurEver Pet Adoptions</title>
@@ -16,19 +15,83 @@
 <body>
 
     <header> 
-        
-        <nav>
-            <h1 id = "logo-name">FurEver</h1>
+    <div id ="mainheader">
+            <div class= "logo">
+                <img src="assets/logo.jpg" alt="logo">
+            </div>
+        <h1 id = "logo-name" class= "logo-parent">FurEver
+            
 
+            </h1>
+            
+            <nav class="topnav">
+                <a class="active" href="#home">Home</a>
+                <a href="#adopt">Adopt</a>
+                <a href="#waystogive">Ways To Give</a>
+                <a href="#contact">Contact</a>
+                <a href="#aboutus">About Us</a>
+            </nav>
 
-
-
-
-
-
-        </nav>
+        </div>
 
     </header>
+
+<!-- SEARCH BAR  -->
+    <section id="search-section">
+        <form id="search bar"></form>
+        <input type="search" id="query" name="search-value" placeholder="Search">
+        
+    </section>
+
+    <!-- PET DISPLAY CONTAINERS -->
+
+    <section id="pet-container">
+
+        <div id="pet-nav">
+                
+            <div class="winnie">
+                <img id="winnie-display" 
+                src="pet-adoption-pics/winnie-purrington.jpg" 
+                alt="Winnie Purrington">
+            </div>
+
+            <div class = "rover">
+                <img id="rover-display" 
+                src="pet-adoption-pics/rover-fluffington.jpg" 
+                alt="Rover Fluffington">
+            </div>
+
+            <div class = "pixie">
+                <img id="pixie-display" 
+                src="pet-adoption-pics/pixie-twinkletoes.jpg" 
+                alt="Pixie Twinkletoes">
+            </div>
+
+            <div class = "mocha">
+                <img id="mocha-display" 
+                src="pet-adoption-pics/mocha-buttercup.jpg" 
+                alt="Mocha Buttercup">
+            </div>
+                
+            <div class = "petunia">
+                <img id="petunia-display" 
+                src="pet-adoption-pics/petunia-puddlepaws.jpg" 
+                alt="Petunia Puddlepaws">
+            </div>
+
+            <div class = "max">
+                <img id="max-display" 
+                src="pet-adoption-pics/max-cuddlebuns.jpg" 
+                alt="Max Cuddlebuns">
+            </div>
+
+        </div>
+    
+
+
+
+
+
 
 </body>
 
