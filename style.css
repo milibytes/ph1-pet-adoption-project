@@ -23,8 +23,14 @@ margin-right: auto;
 position: relative;
 bottom: 50%;
 left: 0;
-
 }
+
+#search-bar {
+width: 2000px;
+border-radius: 100%;
+}
+
+
 #pet-nav {
 display: flex;
 flex-wrap: wrap;
