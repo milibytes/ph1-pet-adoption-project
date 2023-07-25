@@ -105,3 +105,14 @@ font-size: small;
 text-indent: 35px;
 
 }
+
+
+#image-png {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    border-radius: 30px;
+    margin: 0 auto;
+}
+

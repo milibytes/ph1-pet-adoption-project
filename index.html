@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="src/index.js"></script>
+    <script defer src="index.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>FurEver Pet Adoptions</title>
 
@@ -19,7 +19,7 @@
         <div id ="mainheader">
     
         <div>
-            <img src="assets/logo.jpg" class= "logo" alt="logo">
+            <img src="./assets/logo.jpg" class= "logo" alt="logo">
     
             <h1 id = "logo-name" class= "logo-parent">FurEver</h1>
         </div>
@@ -33,9 +33,9 @@
                 <a href="#aboutus">About Us</a>
             </nav>
 
-            <img src="/assets/contact-icon.png" alt="contact">
-            <img src="/assets/camera-icon.png" alt="camera">
-            <img src="/assets/email-icon.png" alt="email">
+            <img src="./assets/contact-icon.png" alt="contact">
+            <img src="./assets/camera-icon.png" alt="camera">
+            <img src="./assets/email-icon.png" alt="email">
 
         </div>
 
@@ -52,9 +52,11 @@
 
     <section id="pet-container">
 
+
         <div id="pet-nav">
-                
-            <div class="winnie">
+            
+            <!-- BTB 072523 Commented out the below cards to populate them with JavaScript instead-->
+            <!-- <div class="winnie">
                 <img id="winnie-display" 
                 src="pet-adoption-pics/winnie-purrington.jpg" 
                 alt="Winnie Purrington">
@@ -88,7 +90,7 @@
                 <img id="max-display" 
                 src="pet-adoption-pics/max-cuddlebuns.jpg" 
                 alt="Max Cuddlebuns">
-            </div>
+            </div> -->
 
         </div>
     
@@ -97,11 +99,15 @@
             <section id= "card">
                 <div class = "pet-card">
                     
+                    <img src="./assets/logo.jpg" alt="Click a pet to your left!" id = "image-png">
+
                     <div class="pet-info">
-        
+
+
+                    <h3 class="name">Name: </h3> <!--BTB added name -->
                     <h3 class="age">Age:</h3>
                     <h3 class="breed">Breed:</h3>
-                    <h3 class="gender">Gender:</h3>
+                    <h3 class="sex">Sex:</h3>
                     <h3 class="birthday">Birthday:</h3>
                     <h3 class="tricks">Tricks:</h3>
                     <h3 class="species">Species:</h3>
