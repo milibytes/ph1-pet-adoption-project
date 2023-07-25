@@ -8,28 +8,50 @@ display: flex;
 align-items: center;
 padding: 0 20px;
 justify-content: space-between;
+}
 
-
+h1 {
+display: flex;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 2em;
+margin-block-start: 0.67em;
+margin-block-end: 0.67em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+font-weight: bold;
 }
 
 .topnav {
-border: 1px solid black;
+border: 1px solid mediumpurple;
 border-radius: 20px;
 padding: 8px 20px;
 display: flex;
-gap: 10px;
+gap: 20px;
+
 }
 
 #mainheader div {
 display: flex;
 }
 
+.icon {
+display: flex;
+}
+
+.icon img {
+display: flex;
+justify-content: space-between;
+width: 50px;
+height: 50px;
+align-items: center;
+
+}
 
 
 .logo-parent {
 position: relative;
 top: 0;
-left: 100;
+
 }
 
 .logo {
@@ -40,9 +62,11 @@ height: 50px;
 
 
 #query {
-    border-radius: 20px;
-    width: 60vw;
-    padding: 10px 20px;
+border-radius: 20px;
+width: 60vw;
+padding: 10px 20px;
+border: 1px solid mediumpurple;
+display: flex;
 }
 
 #pet-container {
@@ -58,7 +82,7 @@ justify-content: center;
 gap: 10px 20px; /* row-gap column gap */
 }
 
-img {
+#pet-nav img {
 display: flex;
 width: 200px;
 height: 200px;
@@ -96,15 +120,20 @@ height: 240px;
 margin-right: auto;
 margin-left: auto;
 border-radius: 30px;
+text-align: justify;
 
 }
 
 .pet-info h3 {
 text-align: left;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 font-size: small;
 text-indent: 35px;
-
+position: relative;
+top: 40px;
+left: -5px;
 }
+
 
 
 #image-png {

@@ -127,3 +127,4 @@ fetch ("http://localhost:3000/pets")
 //     theButton.textContent = currentMovie.watched ? "Watched" : "Unwatched"
 //     //Note: For coding challege, fine to just change the text not do a Patch
 // })
+
