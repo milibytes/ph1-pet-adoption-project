@@ -73,14 +73,19 @@ fetch ("http://localhost:3000/pets")
     // Set a starting pet. For now, putting in the first item. But code below is to change this to a
     // random pet once we get it working.
     // const initialPet = pets[0]
-    //Code for random pet-  currently commented out
-    // function randomIntFromInterval(min, max) { // min and max included 
-    //     return Math.floor(Math.random() * (max - min + 1) + min)
-    //   }
-    //   const randomInt = randomIntFromInterval(1, 6) // 1 through 6 since we have six pet cards
-    //   console.log(randomInt)
-    // Call the petDetails function to display details for an initial pet
-    // petDetails(initialPet)
+    // This code creates a random number for choosing the starting 
+    function randomIntFromInterval(min, max) { // min and max included 
+        return Math.floor(Math.random() * (max - min + 1) + min)
+        }
+        //Subtract 1 from the randomInt to account for an array value of zero
+        const petsArrayLengthMinusOne = pets.length -= 1
+        const randomInt = randomIntFromInterval(0, petsArrayLengthMinusOne)
+        console.log("This is my randomInt value: ", randomInt)
+        console.log("This is my arrayLength value: ", petsArrayLengthMinusOne)
+    //Make a constant of the details of the random starting pet
+    const initialPet = pets[randomInt]
+    // Call the petDetails function to display details of the array object for the random initial pet
+    petDetails(initialPet)
 })
 
 
