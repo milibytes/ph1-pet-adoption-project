@@ -47,9 +47,10 @@
 
 <!-- SEARCH BAR  -->
     <section id="search-section">
-        <form id="search-bar"></form>
-        <input type="search" id="query" name="search-value" placeholder="&#128069">
-        
+        <form id="search-form">
+        <input type="search" id="search-query" name="search-value" placeholder="&#128069">
+        <button type="submit"> Search</button>
+    </form>
     </section>
 
     <!-- PET DISPLAY CONTAINERS -->
@@ -58,7 +59,24 @@
 
 
         <div id="pet-nav">
-            
+        
+        <!-- Adoption Furm that will be hidden on initial load but come up with a pet is "licked"-->
+        <!-- <form id = "adoption-form style = "none"> //Note that this is hidden
+            <label for="adopter-fname">First name:</label><br>
+            <input type="text" id="adopter-fname" name="fname"><br>
+            <label for="adopter-lname">Last name:</label><br>
+            <input type="text" id="adopter-lname" name="lname">
+            <label for="adopter-email">Email:</label><br>
+            <input type="text" id="adopter-email" name="email">
+            <label for="adopter-phone">Phone Number:</label><br>
+            <input type="text" id="adopter-phone" name="phone"><br>
+            <label for="adopter-zipcode">Zip Code:</label><br>
+            <input type="text" id="adopter-zipcode" name="zipcode"><br>
+            <label for="adopter-details">In 200 words or less, tell us why you are interested in adopting?</label><br>
+            <input type="text" id="adopter-details" name="details"><br>
+
+          </form>     -->
+        
         </div>
     
 
@@ -71,7 +89,8 @@
                     <div class="pet-info">
 
 
-                    <h2 class="name"></h2>
+                    <h2 class="name" id = "current-pet-name"></h2>
+
                     <h3 class="age"></h3>
                     <h3 class="breed"></h3>
                     <h3 class="sex"></h3>
