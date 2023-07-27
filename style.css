@@ -164,17 +164,24 @@ margin: 0 auto;
 object-fit: cover;
 }
 
+
+/* Start the form as hidden */
+
 #lick-button {
 position: relative;
 top: 170px;
 left: 50px;
 }
 
-#adopt-furm {
+#adoption-form {
     background-color: #FDE9FF;
     width: 65vw;
-    display: flex;
+    display: none;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
+    border-radius: 20px;
+    padding: 8px 20px;
+    /* position: absolute;
+    top: 140px; */
     gap: 10px 20px; /* row-gap column gap */
     }
