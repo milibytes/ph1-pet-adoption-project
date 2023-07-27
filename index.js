@@ -137,7 +137,7 @@ fetch("http://localhost:3000/pets")
                 petNav.append(noResultsDiv);
             }
         });
-    });
+
 
 //When user clicks on the Lick button, up the number of licks and do a PATCH to the database
 //to update the number of Licks
