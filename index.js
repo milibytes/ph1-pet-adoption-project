@@ -20,8 +20,6 @@ let currentPet;
 let pets;
 
 
-
-
 // Write a function to populate pet details when filling into containers and when highlighting 
 // a particular pet on the right side display panel
 function petDetails(pet) {
