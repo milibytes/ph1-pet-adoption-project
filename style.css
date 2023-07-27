@@ -166,18 +166,22 @@ object-fit: cover;
 }
 
 
+
 #lick-button {
 position: relative;
 top: 170px;
 left: 50px;
 }
 
-
 #adoption-form {
-background-color: #FDE9FF;
-width: 65vw;
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-gap: 10px 20px; /* row-gap column gap */
-}
+    background-color: #FDE9FF;
+    width: 65vw;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: left;
+    border-radius: 20px;
+    padding: 8px 20px;
+    /* position: absolute;
+    top: 140px; */
+    gap: 10px 20px; /* row-gap column gap */
+    }
