@@ -1,6 +1,7 @@
 body {
 background: hsl(67, 43%, 96%);
 margin: 0px;
+font-family: "Raleway", "serif";
 }
 
 #mainheader {
@@ -13,13 +14,16 @@ justify-content: space-between;
 
 h1 {
 display: flex;
-font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 font-size: 2em;
 margin-block-start: 0.67em;
 margin-block-end: 0.67em;
 margin-inline-start: 0px;
 margin-inline-end: 0px;
 font-weight: bold;
+}
+
+nav a{
+text-decoration: none;
 }
 
 .topnav {
@@ -68,7 +72,7 @@ width: 60vw;
 padding: 10px 20px;
 border: 1px solid mediumpurple;
 display: flex;
-margin-top: 20px;
+margin-top: 22px;
 margin-left: 100px;
 }
 
@@ -92,7 +96,7 @@ height: 200px;
 padding: 20px;
 transition: transform .2s;
 border-radius: 30px;
-margin: 0 auto;
+margin: 5px auto;
 }
 
 #pet-nav img:hover {
@@ -104,13 +108,15 @@ background-color: #FDE9FF;
 position: relative;
 width: 260px;
 height: 400px;
-margin: 20px;
-display: block;
+margin: 15px;
+display: flex;
 flex-direction: column;
 align-items: center;
-border-radius: 30px;
+border-radius: 45px;
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 transition: box-shadow 0.3s ease-in-out;
+left: -15px;
+top: 25px;
 }
 
 .pet-info {
@@ -129,18 +135,16 @@ text-align: justify;
 
 .pet-info h2 {
 text-align: left;
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 font-size: medium;
 text-indent: 35px;
 position: relative;
-top: -2px;
-left: -12px;
-    }
+top: -4px;
+left: 7px;
+}
     
 
 .pet-info h3 {
 text-align: left;
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 font-size: small;
 text-indent: 35px;
 position: relative;
