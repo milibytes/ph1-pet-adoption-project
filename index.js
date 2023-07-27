@@ -78,12 +78,19 @@ fetch("http://localhost:3000/pets")
             return Math.floor(Math.random() * (max - min + 1) + min);
         }
 
-        const petsArrayLengthMinusOne = pets.length - 1;
-        const randomInt = randomIntFromInterval(0, petsArrayLengthMinusOne);
-        const initialPet = pets[randomInt];
+        //Subtract 1 from the randomInt to account for an array value of zero
+        const petsArrayLengthMinusOne = pets.length - 1
+        const randomInt = randomIntFromInterval(0, petsArrayLengthMinusOne)
+        console.log("This is my randomInt value: ", randomInt)
+        console.log("This is my arrayLength value: ", petsArrayLengthMinusOne)
+    //Make a constant of the details of the random starting pet
+    const initialPet = pets[randomInt]
+        console.log("My randomly selected starting pet is:, ", pets[randomInt])
+    // Call the petDetails function to display details of the array object for the random initial pet
+    petDetails(initialPet)
+})
 
-        // Call the petDetails function to display details of the array object for the random initial pet
-        petDetails(initialPet);
+
 
         // Make an event listener for the SEARCH here inside the fetch .then() callback
         searchForm.addEventListener("submit", (event) => {
@@ -264,11 +271,14 @@ lickButton.addEventListener("click", () => {
 //       .then((patchedPet) => (licks.textContent = `${patchedPet.licks} Licks`))
 // })
 
+
 // //For now, since we don't have unique user logins, when someone clicks the lick button,
 // //the button will go away and show up as licked
 
 
+
 // //Make an event listener for the SEARCH
+
 
 // searchForm.addEventListener("submit", (event) => {
 //     event.preventDefault()
@@ -304,11 +314,23 @@ lickButton.addEventListener("click", () => {
 
 // //display message, if no filtered pets
 
+
+
+// CODING OFF BELOW AS A START IN CASE WE NEED IT
+// const theButton = document.querySelector("#watched")
+// theButton.addEventListener("click", () => {
+//     //using the global variable, we are making the watched value the opposite of itself
+//     currentMovie.watched = !currentMovie.watched
+//     //Now, on the current Movie, which is the button in this case when we are clicking, we m
+//     theButton.textContent = currentMovie.watched ? "Watched" : "Unwatched"
+//     //Note: For coding challege, fine to just change the text not do a Patch
+
 // if(filteredPets.length ===0) {
 //     const noResultsDiv = document.createElement('div')
 //     noResultsDiv.textContent = 'No pets found matching your search!'
 //     petNav.append(noResultsDiv)
 // }
+
 // })
 
 
