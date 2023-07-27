@@ -78,12 +78,13 @@ fetch ("http://localhost:3000/pets")
         return Math.floor(Math.random() * (max - min + 1) + min)
         }
         //Subtract 1 from the randomInt to account for an array value of zero
-        const petsArrayLengthMinusOne = pets.length -= 1
+        const petsArrayLengthMinusOne = pets.length - 1
         const randomInt = randomIntFromInterval(0, petsArrayLengthMinusOne)
         console.log("This is my randomInt value: ", randomInt)
         console.log("This is my arrayLength value: ", petsArrayLengthMinusOne)
     //Make a constant of the details of the random starting pet
     const initialPet = pets[randomInt]
+        console.log("My randomly selected starting pet is:, ", pets[randomInt])
     // Call the petDetails function to display details of the array object for the random initial pet
     petDetails(initialPet)
 })
@@ -91,35 +92,50 @@ fetch ("http://localhost:3000/pets")
 
 
 // When user clicks on the Lick button, up the number of licks and do a PATCH to the database
-// to update the number of Licks
-// const lickButton = document.querySelector("#lick-bttn")
-// lickButton.addEventListener = ("click", () =>
-//     fetch(`http://localhost:3000/${currentPet}`, {
-//         method: "PATCH",
-//         headers: {
-//           "Content-Type": "application/json",
-//           "Accept": "application/json"
-//         },
-//         body: JSON.stringify({
-//           licks: ++licks,
-//           licked: !licked
-//         })
-//       }).then(response => response.json())
-//       // Updating `likes.textContent` here (rather than before our `fetch()`)
-//       //          guarantees that it only updates after our PATCH succeeds.
-//       .then(patchedPet => licks.textContent = `${patchedPet.licks} Licks`)
-//     )
+// to update the number of Licks and open the adoption Furm
+
+const lickButton = document.querySelector("#lick-bttn")
+lickButton.addEventListener = ("click", () =>
+    fetch(`http://localhost:3000/${currentPet}`, {
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify({
+          licks: ++licks,
+          licked: !licked
+        })
+      }).then(response => response.json())
+      // Updating `likes.textContent` here (rather than before our `fetch()`)
+      //          guarantees that it only updates after our PATCH succeeds.
+      .then(patchedPet => licks.textContent = `${patchedPet.licks} Licks`)
+    //Open the adoption form
+    
+
+    )
 
 // For now, since we don't have unique user logins, when someone clicks the lick button,
 // the button will go away and show up as licked
 
 
+//MELISSA is hsandling this 
 // Make an event listener for the search button
 // searchForm.addEventListener("submit", (event) => {
 //     event.preventDefault()
 
 
 // })
+
+
+
+
+
+
+
+
+
+
 
 
 
