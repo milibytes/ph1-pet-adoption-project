@@ -164,8 +164,19 @@ margin: 0 auto;
 object-fit: cover;
 }
 
+
 #lick-button {
 position: relative;
 top: 170px;
 left: 50px;
 }
+
+
+#adoption-form {
+    background-color: #FDE9FF;
+    width: 65vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 20px; /* row-gap column gap */
+    }
