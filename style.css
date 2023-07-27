@@ -145,12 +145,16 @@ left: -5px;
     margin: 0 auto;
 }
 
-
-#adopt-furm {
+/* Start the form as hidden */
+#adoption-form {
     background-color: #FDE9FF;
     width: 65vw;
-    display: flex;
+    display: none;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
+    border-radius: 20px;
+    padding: 8px 20px;
+    /* position: absolute;
+    top: 140px; */
     gap: 10px 20px; /* row-gap column gap */
     }
