@@ -29,7 +29,7 @@ function petDetails(pet) {
     pngImage.src = pet.pngImage;
     pngImage.alt = pet.name;
     const name = document.querySelector(".name");
-    name.textContent = "Name: " + pet.name;
+    name.textContent = pet.name;
     const age = document.querySelector(".age");
     age.textContent = "Age: " + pet.age;
     const birthday = document.querySelector(".birthday");
