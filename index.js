@@ -24,8 +24,6 @@ let pets;
 
 // Write a function to populate pet details when filling into containers and when highlighting 
 // a particular pet on the right side display panel
-// Write a function to populate pet details when filling into containers and when highlighting 
-// a particular pet on the right side display panel
 function petDetails(pet) {
     // Set the current pet so that the "lick" button will work
     currentPet = pet;
@@ -55,7 +53,6 @@ function petDetails(pet) {
 }
 
 // Fetch request to populate the petNav from the JSON file
-function renderPets () {
 fetch("http://localhost:3000/pets")
     .then((response) => response.json())
     .then((fetchedPets) => {
@@ -94,7 +91,6 @@ fetch("http://localhost:3000/pets")
     // Call the petDetails function to display details of the array object for the random initial pet
     petDetails(initialPet)
 })
-}
 
 
 
@@ -143,10 +139,6 @@ fetch("http://localhost:3000/pets")
                 petNav.append(noResultsDiv);
             }
         });
-
-//Render the pets on load
-renderPets ()
-
  
 
 // Hide the adoption form when the page is loaded
@@ -186,6 +178,5 @@ adoptionForm.addEventListener("submit", event => {
     let name = currentPet.name
     alert(`${name} thanks you furever! 👅`);
     document.querySelector("#adoption-form").style.display = "none";
-    renderPets ()
 })
 

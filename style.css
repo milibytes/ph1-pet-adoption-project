@@ -1,5 +1,7 @@
 body {
 background: hsl(67, 43%, 96%);
+margin: 0px;
+font-family: "Raleway", "serif";
 }
 
 #mainheader {
@@ -12,13 +14,16 @@ justify-content: space-between;
 
 h1 {
 display: flex;
-font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 font-size: 2em;
 margin-block-start: 0.67em;
 margin-block-end: 0.67em;
 margin-inline-start: 0px;
 margin-inline-end: 0px;
 font-weight: bold;
+}
+
+nav a{
+text-decoration: none;
 }
 
 .topnav {
@@ -35,27 +40,27 @@ display: flex;
 }
 
 .icon {
+height: 50px;
 display: flex;
+gap: 20px;
 }
 
 .icon img {
-display: flex;
-justify-content: space-between;
-width: 50px;
-height: 50px;
-align-items: center;
-
+height: 100%;
+transition: transform .2s;
 }
 
+.icon img:hover {
+transform: scale(1.2); 
+}
 
 .logo-parent {
 position: relative;
 top: 0;
-
 }
 
 .logo {
-margin:0;
+margin:10px;
 width: 50px;
 height: 50px;
 }
@@ -67,6 +72,8 @@ width: 60vw;
 padding: 10px 20px;
 border: 1px solid mediumpurple;
 display: flex;
+margin-top: 22px;
+margin-left: 100px;
 }
 
 #pet-container {
@@ -89,10 +96,10 @@ height: 200px;
 padding: 20px;
 transition: transform .2s;
 border-radius: 30px;
-margin: 0 auto;
+margin: 5px auto;
 }
 
-img:hover {
+#pet-nav img:hover {
 transform: scale(1.2); 
 }
 
@@ -101,13 +108,15 @@ background-color: #FDE9FF;
 position: relative;
 width: 260px;
 height: 400px;
-margin: 20px;
-display: block;
+margin: 15px;
+display: flex;
 flex-direction: column;
 align-items: center;
-border-radius: 30px;
+border-radius: 45px;
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 transition: box-shadow 0.3s ease-in-out;
+left: -15px;
+top: 25px;
 }
 
 .pet-info {
@@ -124,28 +133,46 @@ text-align: justify;
 
 }
 
+.pet-info h2 {
+text-align: left;
+font-size: medium;
+text-indent: 35px;
+position: relative;
+top: -4px;
+left: 7px;
+}
+    
+
 .pet-info h3 {
 text-align: left;
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 font-size: small;
 text-indent: 35px;
 position: relative;
-top: 40px;
+top: 1px;
+display: flex;
 left: -5px;
 }
 
 
-
 #image-png {
-    display: flex;
-    width: 150px;
-    height: 150px;
-    padding: 10px;
-    border-radius: 30px;
-    margin: 0 auto;
+display: flex;
+width: 150px;
+height: 150px;
+padding: 10px;
+border-radius: 30px;
+margin: 0 auto;
+object-fit: cover;
 }
 
+
 /* Start the form as hidden */
+
+#lick-button {
+position: relative;
+top: 170px;
+left: 50px;
+}
+
 #adoption-form {
     background-color: #FDE9FF;
     width: 65vw;
