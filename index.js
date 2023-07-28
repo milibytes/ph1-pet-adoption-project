@@ -20,6 +20,21 @@ let currentPet;
 let pets;
 
 
+// LICK BUTTON
+
+lickButton.addEventListener("click", () => {
+
+    if (lickButton.textContent === "LICKED") {
+        lickButton.textContent = true
+        lickButton.textContent = "LICK ME"
+    } else {
+        lickButton.textContent = false
+        lickButton.textContent = "LICKED"
+    }
+
+
+})
+
 // Write a function to populate pet details when filling into containers and when highlighting 
 // a particular pet on the right side display panel
 function petDetails(pet) {
@@ -147,6 +162,7 @@ document.querySelector("#lick-button").addEventListener("click", () => {
   var allPets = document.getElementsByClassName('pet-div');
   delete allPets
 });
+
 
 
 // Add an event listener to the form so that when the information is submitted
