@@ -24,12 +24,12 @@ let pets;
 
 lickButton.addEventListener("click", () => {
 
-    if (lickButton.textContent === "LICKED") {
+    if (lickButton.textContent === "LICKED!") {
         lickButton.textContent = true
         lickButton.textContent = "LICK ME"
     } else {
         lickButton.textContent = false
-        lickButton.textContent = "LICKED"
+        lickButton.textContent = "LICKED!"
     }
 
 
@@ -157,10 +157,10 @@ fetch("http://localhost:3000/pets")
 // Hide the adoption form when the page is loaded
 let showForm = false;
 document.querySelector("#lick-button").addEventListener("click", () => {
-  showForm = !showForm;
-  document.querySelector("#adoption-form").style.display = showForm ? "block" : "none";
-  var allPets = document.getElementsByClassName('pet-div');
-  delete allPets
+showForm = !showForm;
+document.querySelector("#adoption-form").style.display = showForm ? "block" : "none";
+var allPets = document.getElementsByClassName('pet-div');
+delete allPets
 });
 
 

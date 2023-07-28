@@ -65,6 +65,11 @@ width: 50px;
 height: 50px;
 }
 
+#search-section {
+    display: flex;
+    gap: 5vw;
+    justify-content: center;
+}
 
 #search-query {
 border-radius: 20px;
@@ -74,7 +79,6 @@ padding: 10px 20px;
 border: 1px solid mediumpurple;
 display: flex;
 margin-top: 22px;
-margin-left: 100px;
 }
 
 #pet-container {
@@ -88,6 +92,7 @@ display: flex;
 flex-wrap: wrap;
 justify-content: center;
 gap: 10px 20px; /* row-gap column gap */
+margin-top: -45px;
 }
 
 #pet-nav img {
@@ -100,7 +105,7 @@ border-radius: 30px;
 margin: 5px auto;
 }
 
-#pet-nav img#lick-button {
+#pet-nav img:hover {
 transform: scale(1.2); 
 }
 
@@ -117,7 +122,7 @@ border-radius: 45px;
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 transition: box-shadow 0.3s ease-in-out;
 left: -15px;
-top: 25px;
+top: 0px;
 }
 
 .pet-info {
@@ -152,6 +157,7 @@ position: relative;
 top: -5px;
 display: flex;
 left: -5px;
+font-weight: 500;
 }
 
 
@@ -165,21 +171,12 @@ margin: 0 auto;
 object-fit: cover;
 }
 
-
-#lick-button {
-position: relative;
-top: 177px;
-left: 0px;
-border-radius: 30px;
-height: 25px;
-background-color: #D2C7FF;
-}
-
 #adoption-form {
 background-color: #FDE9FF;
 width: 55vw;
 display: none;
 flex-wrap: wrap;
+font-weight: 500;
 justify-content: left;
 border-radius: 20px;
 padding: 8px 20px;
@@ -189,23 +186,31 @@ gap: 10px 20px; /* row-gap column gap */
 margin: 30px;
 }
 
-<!-- HTML !-->
-<button class="button-74" role="button">Button 74</button>
+#lick-button {
+position: relative;
+top: 177px;
+left: 0px;
+border-radius: 30px;
+height: 25px;
+background-color:#D2C7FF;
+}
+
+
+/* <!-- HTML !-->
+<button class="button-74" role="button">Button 74</button> */
 
 /* CSS */
 
 #lick-button {
-background-color: #fbeee0;
 border: 2px solid #422800;
 border-radius: 30px;
 box-shadow: #422800 4px 4px 0 0;
 color: #422800;
 cursor: pointer;
 display: inline-block;
-font-weight: 600;
-font-size: 18px;
+font-weight: 550;
+font-size: 13px;
 padding: 0 18px;
-line-height: 50px;
 text-align: center;
 text-decoration: none;
 user-select: none;
@@ -227,4 +232,42 @@ transform: translate(2px, 2px);
 min-width: 120px;
 padding: 0 25px;
 }
+}
+
+@media (max-width: 900px) {    
+    #pet-nav {
+        margin-top: -90px;
+        }
+    }
+
+#slogan {
+display: flex;
+flex-wrap: wrap;
+font-weight: bolder;
+font-size: x-large;
+top: 10px;
+left: 600px;
+width: 20vw
+
+}
+
+body {
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>❤️</text></svg>") 16 0,auto; 
+}
+
+
+
+
+#adoption-form input{
+border-radius: 15px;
+width: 450px;
+height: 15px;
+padding: 6px;
+border: 15px;
+}
+
+#adoption-form button {
+border-radius: 30px;
+width: 100px;
+margin: 10px;
 }
