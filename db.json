@@ -139,6 +139,33 @@
       "zipcode": "100039",
       "details": "bait for larger animals that I will catch",
       "id": 6
+    },
+    {
+      "fname": "Jacob",
+      "lname": "Jacobson",
+      "email": "j@gmail..com",
+      "phone": "9199383",
+      "zipcode": "10033",
+      "details": "I like dogs",
+      "id": 7
+    },
+    {
+      "fname": "Lucy",
+      "lname": "Barden",
+      "email": "lbarden@icloud.com",
+      "phone": "9292843028",
+      "zipcode": "28083",
+      "details": "I love dogs!",
+      "id": 8
+    },
+    {
+      "fname": "Chett",
+      "lname": "Tiller",
+      "email": "chet@flatiron.com",
+      "phone": "92981039",
+      "zipcode": "10002",
+      "details": "I like dogs! And cats. All animals. Except mosquitos",
+      "id": 9
     }
   ]
 }
