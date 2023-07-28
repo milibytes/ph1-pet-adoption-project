@@ -161,10 +161,7 @@ fetch("http://localhost:3000/pets")
 // Hide the adoption form when the page is loaded
 let showForm = false;
 document.querySelector("#lick-button").addEventListener("click", () => {
-showForm = !showForm;
-document.querySelector("#adoption-form").style.display = showForm ? "block" : "none";
-var allPets = document.getElementsByClassName('pet-div');
-delete allPets
+document.querySelector("#adoption-form").style.display = "block";
 });
 
 
@@ -192,10 +189,21 @@ adoptionForm.addEventListener("submit", event => {
         details: event.target.details.value
       })
     }).then(response => response.json())
-    adoptionForm.reset
+    // Reset the adoption form
+    adoptionForm.reset()
+    // Add thank you alert
     let name = currentPet.name
     alert(`${name} thanks you furever! 👅`);
+    // Re-hide the adoption form
     document.querySelector("#adoption-form").style.display = "none";
+    // Reset the Lick button
+    if (lickButton.textContent === "LICKED!") {
+        lickButton.textContent = true
+        lickButton.textContent = "LICK ME"
+    } else {
+        lickButton.textContent = false
+        lickButton.textContent = "LICKED!"
+    }
 })
 
 

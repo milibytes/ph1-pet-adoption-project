@@ -94,6 +94,24 @@
       "zipcode": "20009",
       "details": "I like cats!",
       "id": 1
+    },
+    {
+      "fname": "Bret",
+      "lname": "Barden",
+      "email": "bret.@gmail.com",
+      "phone": "2123498598",
+      "zipcode": "10022",
+      "details": "Because I love dogs!",
+      "id": 2
+    },
+    {
+      "fname": "Terry",
+      "lname": "Gross",
+      "email": "Terry@npr.org",
+      "phone": "9209384928",
+      "zipcode": "30004",
+      "details": "I love dogs and cats!",
+      "id": 3
     }
-   ]
+  ]
 }
