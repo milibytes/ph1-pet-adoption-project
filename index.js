@@ -1,12 +1,16 @@
 
 //FUREVER 
 
-// 1. Fetch the array object from the JSON database
+// 1. Fetch the array object of adoptable pets from the JSON database
 // 2. Write a function that displays the details on the pet in the right side pane
-// 3. Add an event listener for when user mouses over an object so that it gets slight
-// 4. Add an event listener for when a user searches via the search form
-// 5. Add an event listener so that when someone click on "Lick"
-// 6. On load, show a random pet card on the right side display
+// 3. On load, show a random pet card on the right side display
+// 4. Add an event listener to display details of a pet when the user clicks on a pet in the menu
+// 5. Add an event listener for when a user searches via the search form
+// 6. Add an event listener so that when someone click on "Lick" the adoption form opens
+// 7. Upon submission of an aoption form: update the json database with adopter details, display
+//      an alert thanking the user, and close the form
+// 8. Add event listeners for when the user mouses over the links at the top nav and when they
+//      move the mouse away the links revert
 
 
 
@@ -194,3 +198,19 @@ adoptionForm.addEventListener("submit", event => {
     document.querySelector("#adoption-form").style.display = "none";
 })
 
+
+
+
+// And an event listener for when the user hovers over the links in the top nav bar they change colors
+const navbar = document.querySelector("#topnavbar");
+navbar.addEventListener("mouseover", (event) => {
+    event.target.style.color = "orange";
+  },
+  false,
+);
+// Add a mouseout event so that when the user moves off a link it will revert colors
+navbar.addEventListener("mouseout", (event) => {
+    event.target.style.color = "";
+  },
+  false,
+);
