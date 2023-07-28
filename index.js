@@ -186,7 +186,8 @@ adoptionForm.addEventListener("submit", event => {
         email: event.target.email.value,
         phone: event.target.phone.value,
         zipcode: event.target.zipcode.value,
-        details: event.target.details.value
+        details: event.target.details.value,
+        pet: currentPet.name
       })
     }).then(response => response.json())
     // Reset the adoption form

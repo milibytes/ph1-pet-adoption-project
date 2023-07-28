@@ -85,33 +85,5 @@
       "licked": false
     }
   ],
-  "adopters": [
-    {
-      "fname": "Mili",
-      "lname": "Millingtonson",
-      "email": "mill@gmail.com",
-      "phone": "212-398-9384",
-      "zipcode": "20009",
-      "details": "I like cats!",
-      "id": 1
-    },
-    {
-      "fname": "Bret",
-      "lname": "Barden",
-      "email": "bret.@gmail.com",
-      "phone": "2123498598",
-      "zipcode": "10022",
-      "details": "Because I love dogs!",
-      "id": 2
-    },
-    {
-      "fname": "Terry",
-      "lname": "Gross",
-      "email": "Terry@npr.org",
-      "phone": "9209384928",
-      "zipcode": "30004",
-      "details": "I love dogs and cats!",
-      "id": 3
-    }
-  ]
+  "adopters": []
 }
