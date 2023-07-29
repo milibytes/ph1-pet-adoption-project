@@ -50,7 +50,7 @@ height: 100%;
 transition: transform .2s;
 }
 
-.icon img#lick-button {
+.icon img:hover {
 transform: scale(1.2); 
 }
 
@@ -145,7 +145,7 @@ font-size: medium;
 text-indent: 35px;
 position: relative;
 top: -4px;
-left: 7px;
+left: -4px;
 }
     
 
@@ -256,8 +256,6 @@ body {
 }
 
 
-
-
 #adoption-form input{
 border-radius: 15px;
 width: 450px;
@@ -271,3 +269,4 @@ border-radius: 30px;
 width: 100px;
 margin: 10px;
 }
+
